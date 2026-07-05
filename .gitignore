@@ -3,6 +3,7 @@
 venv/
 test-data/
 data/
+refcode/
 
 __pycache__/
 *.py[cod]
