@@ -1,7 +1,8 @@
 # Polymarket Data Tool
 a polymarket tool to fetch orderbook data
 ## Init 
-`pip instal requests websockets python-socks sortedcontainers `
+`pip instal requests websockets python-socks sortedcontainers playwright`
+`playwright install chromium`
 ## Files
 `data/<event_slug>/info.json:`
 ```json
@@ -73,6 +74,82 @@ price change event:
    ],
    "timestamp":"1782634156761",
    "event_type":"price_change"
+}
+
+```
+
+
+## Baidu API
+``` json
+
+{
+    "status": 0,
+    "result": {
+        "location": {
+            "country": "中国",
+            "province": "重庆市",
+            "city": "重庆市",
+            "name": "两江新区",
+            "id": "500157"
+        },
+        "now": {
+            "text": "晴",
+            "temp": 35,
+            "uptime": "20260706162500"
+        },
+        
+        "forecasts": [
+            {
+               
+                "high": 35,
+                "low": 26,
+                "date": "2026-07-06",
+               
+            },
+            
+            {
+                
+                "high": 34,
+                "low": 26,
+                "date": "2026-07-12",
+                
+            }
+        ],
+        "forecast_hours": [
+            {
+                "text": "晴",
+                "temp_fc": 34,
+                "wind_class": "<3级",
+                "wind_dir": "东北风",
+                "rh": 62,
+                "prec_1h": 0.0,
+                "clouds": 1,
+                "wind_angle": 66,
+                "pop": 0,
+                "uvi": 7,
+                "pressure": 957,
+                "dpt": 26,
+                "data_time": "2026-07-06 16:00:00"
+            },
+            
+            {
+                "text": "晴",
+                "temp_fc": 34,
+                "wind_class": "<3级",
+                "wind_dir": "东风",
+                "rh": 62,
+                "prec_1h": 0.0,
+                "clouds": 7,
+                "wind_angle": 85,
+                "pop": 0,
+                "uvi": 8,
+                "pressure": 958,
+                "dpt": 26,
+                "data_time": "2026-07-07 15:00:00"
+            }
+        ]
+    },
+    "message": "success"
 }
 
 ```
